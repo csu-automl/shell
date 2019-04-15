@@ -1,0 +1,52 @@
+@import 'src/styles/partials/mixins';
+@import 'src/styles/partials/variables';
+
+.root.signin-page {
+  @include center();
+  background: url('/static/public_bg.jpeg');
+  background-size: cover;
+  h2 {
+    font-size: 32px;
+    text-align: center;
+    font-weight: 300;
+    color: #FFF;
+  }
+  .md-progress-bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  form.md-layout {
+    width: 400px;
+    .md-layout-item {
+      width: 100%;
+      flex: 100% 1 1;
+      label {
+        color: #FFF;
+      }
+      .md-field {
+        input {
+          color: #FFF;
+          -webkit-text-fill-color: #FFF;
+          background-color: transparent !important;
+        }
+        &:after {
+          background-color: #FFF;
+        }
+      }
+    }
+    .md-actions {
+      text-align: center;
+      .md-button {
+        min-width: 160px;
+      }
+    }
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active  {
+      -webkit-box-shadow: 0 0 0 30px transparent inset !important;
+  }
+}

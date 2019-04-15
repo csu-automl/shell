@@ -1,0 +1,12 @@
+@import "~@/styles/partials/variables";
+
+@mixin scrollable($thumb-background: #616161, $track-background: rgba(0,0,0,0.2), $corner-background: transparent) {
+
+  overflow: auto;
+  @media (pointer: fine), (min-width: $screen-sm) {
+    &::-webkit-scrollbar { width: 8px; height: 8px; margin: 5px; }
+    &::-webkit-scrollbar-thumb { background: $thumb-background; border-radius: 20px; }
+    &::-webkit-scrollbar-track { background: $track-background; border-radius: 20px; }
+    &::-webkit-scrollbar-corner { background: $corner-background; }
+  }
+}

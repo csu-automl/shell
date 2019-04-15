@@ -3,10 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import store from './store'
+import storeFactory from './store'
 
 import 'vue-material/dist/vue-material.css'
 import 'vue-material/dist/theme/default.css'
+import './themes/md-theme-default.scss'
 import material from './material'
 
 Vue.config.productionTip = false
@@ -15,7 +16,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
-  store,
+  store: storeFactory(),
   material,
   components: { App },
   template: '<App/>'

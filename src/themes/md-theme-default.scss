@@ -1,0 +1,205 @@
+@import '~@/styles/partials/mixins';
+
+#app {
+  color: #FFFFFF;
+
+  a {
+  	color: #D326F6;
+  }
+
+  @media screen and (min-width: 375px) {
+    .when-screen-width-xs {
+      display: block;
+    }
+  }
+
+  .md-button.md-raised {
+    min-width: 158px;
+  }
+
+  .md-button[disabled].md-raised,
+  .md-button[disabled].md-fab {
+    background-color: rgba(255,255,255,0.57);
+    color: rgba(0,0,0,0.57);
+  }
+
+  .md-display-1,
+  .md-display-2,
+  .md-display-3,
+  .md-display-4 {
+    color: #FAAAFF;
+    font-weight: 300;
+  }
+
+  .md-display-1 {
+    font-size: 32px;
+  }
+
+  .md-layout {
+    margin-bottom: 16px;
+  }
+
+  .md-headline {
+    font-weight: 300;
+  }
+
+  .md-title {
+    font-weight: 300;
+  }
+
+  .md-subheading {
+    font-weight: 300;
+  }
+
+  .md-body-1 {
+    color: rgba(255,255,255,0.54);
+    line-height: 16px;
+    letter-spacing: normal;
+  }
+
+  .md-theme-default {
+    &.md-radio {
+      .md-radio-container {
+        border-color: #ED94FF;
+        // background-color: #ED94FF;
+        &:after {
+          background-color: #ED94FF;
+        }
+      }
+      &.md-checked .md-ink-ripple {
+        color: #ED94FF;
+      }
+    }
+    &.md-input-container {
+
+      label {
+        color: rgba(255,255,255,0.42);
+      }
+
+      input, textarea {
+        color: #FFFFFF;
+      }
+
+      .md-icon:not(.md-icon-delete) {
+        color: rgba(255, 255, 255, 0.54);
+      }
+
+      &:not(.md-input-invalid):after {
+        height: 2px;
+        background: rgba(255,255,255,0.42);
+      }
+
+      &.md-has-value {
+
+        label {
+          color: rgba(255,255,255,0.42);
+        }
+
+        input, textarea {
+          color: #FFFFFF;
+        }
+
+        &:after {
+          height: 2px;
+          background: rgba(255,255,255,0.42);
+        }
+      }
+      .md-button:not([disabled]).md-primary:not(.md-icon-button) {
+        color: #ED94FF;
+      }
+
+      &.md-input-focused {
+
+        label {
+          color: rgba(255,255,255,0.87)
+        }
+
+        input, textarea {
+          color: #FFFFFF;
+          text-shadow: 0 0 0 rgba(255,255,255,0.87);
+          -webkit-text-fill-color: #FFFFFF;
+        }
+
+        .md-icon:not(.md-icon-delete) {
+          color: rgba(255, 255, 255, 0.87);
+        }
+
+        &:after {
+          background: rgba(255,255,255,0.87);
+        }
+      }
+    }
+  }
+
+  .md-theme-inversed {
+    .md-table .md-table-head .md-icon {
+      color: rgba(255,255,255,0.54);
+    }
+    .md-table .md-table-head {
+      color: rgba(237, 148, 255, 0.7);
+      font-weight: 500;
+    }
+    .md-table .md-table-cell {
+      color: rgba(255,255,255,0.54);
+    }
+    .md-table tbody .md-table-row:hover .md-table-cell {
+      background-color: rgba(255,255,255,0.1);
+    }
+    .md-table tbody .md-table-row.md-selected .md-table-cell {
+      background-color: rgba(255,255,255,0.1);
+    }
+    .md-table tbody .md-table-row {
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+    .md-table .md-sortable.md-sorted .md-sortable-icon {
+      color: rgba(255,255,255,0.87);
+    }
+    .md-table .md-sortable:hover, .md-table .md-sortable.md-sorted {
+      color: rgba(255,255,255,0.87);
+    }
+    .md-table .md-table-cell .md-button .md-icon {
+      color: rgba(255,255,255,0.54);
+    }
+    .md-checkbox .md-checkbox-container {
+      border: 2px solid rgba(255, 255, 255, 0.54);
+    }
+    .md-table-pagination {
+      color: rgba(255,255,255,0.87);
+    }
+    .md-button[disabled] {
+      color: rgba(255,255,255,0.26);
+    }
+    .md-button.md-icon-button {
+      color: rgba(255,255,255,0.87);
+    }
+    .md-table-pagination {
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .md-table-pagination .md-button[disabled] .md-icon {
+      color: rgba(255,255,255,0.26);
+    }
+
+    .md-progress {
+      background-color: rgba(255,255,255,0.2);
+      .md-progress-track {
+        background-color: #ED94FF;
+      }
+    }
+    .md-has-value {
+      input, textarea {
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+.md-table {
+  &.x-scrollable {
+    @include scrollable();
+    overflow-y: hidden;
+    table {
+      overflow-x: auto;
+      overflow-y: hidden;
+    }
+  }
+}

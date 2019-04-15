@@ -1,9 +1,7 @@
 import HelloWorld from './lib/HelloWorld/HelloWorld.vue'
-import Tests from './lib/Tests/Tests.vue'
 
 const components = {
-  HelloWorld,
-  Tests
+  HelloWorld
 }
 
 function install (Vue) {

@@ -1,0 +1,9 @@
+{
+  "title": "AutoML",
+  "api": {
+    "host": "http://backend.automl.local"
+  },
+  "auth": {
+    "url": "http://auth.automl.local"
+  }
+}

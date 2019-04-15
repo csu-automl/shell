@@ -1,0 +1,35 @@
+@mixin shell-modal($width: 900px, $height: auto) {
+
+	background-color: #401D43;
+  border-radius: 2px;
+	box-shadow: 0 0 24px 0 rgba(0,0,0,0.22), 0 24px 24px 0 rgba(0,0,0,0.3);
+  padding: 24px;
+
+  width: $width;
+  height: $height;
+  overflow: hidden;
+
+  flex: 0 0 auto;
+
+  max-height: 90%;
+  max-width: 90%;
+
+  .header {
+    .title {
+      margin: 0 0 15px 0;
+			font-size: 20px;
+			line-height: 24px;
+			font-weight: 400;
+    }
+  }
+	.bottom {
+		.actions {
+			text-align: right;
+			padding-top: 15px;
+			margin-bottom: -10px;
+			.md-button {
+				margin: 0;
+			}
+		}
+	}
+}

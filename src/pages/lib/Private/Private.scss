@@ -1,0 +1,11 @@
+@import '~@/styles/partials/mixins';
+@import '~@/styles/partials/variables';
+
+.root.private-page {
+  @include dock-column();
+  @include position(absolute, auto, auto, auto, auto, 100%, 100%);
+  .middle {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
