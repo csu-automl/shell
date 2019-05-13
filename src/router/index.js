@@ -18,6 +18,16 @@ export default new Router({
       component: pages.SignIn
     },
     {
+      path: '/signup',
+      name: 'SignUp',
+      component: pages.SignUp
+    },
+    {
+      path: '/email-sent',
+      name: 'EmailSent',
+      component: pages.EmailSent
+    },
+    {
       path: '/private',
       name: 'Private',
       component: pages.Private,

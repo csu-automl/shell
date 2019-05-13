@@ -1,13 +1,10 @@
 @import 'src/styles/partials/mixins';
 @import 'src/styles/partials/variables';
 
-.root.signin-page {
+.root.signup-page {
   @include center();
   background: url('/static/public_bg.jpeg');
   background-size: cover;
-  .signup-link {
-    color: #fafafa !important;
-  }
   h2 {
     font-size: 32px;
     text-align: center;
