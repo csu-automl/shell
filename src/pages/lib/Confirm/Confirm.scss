@@ -1,6 +1,8 @@
 @import 'src/styles/partials/mixins';
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
 
-.root.email-sent {
+.root.confirm {
   @include center();
   color: #FFFFFF;
   background: url('/static/public_bg.jpeg');
@@ -21,5 +23,11 @@
     line-height: 27px;
     font-size: 20px;
     margin-bottom: 55px;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px transparent inset !important;
   }
 }

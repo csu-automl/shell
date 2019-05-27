@@ -1,25 +1,16 @@
 @import 'src/styles/partials/mixins';
 
-.root.email-sent {
+.not-found-page {
   @include center();
   color: #FFFFFF;
   background: url('/static/public_bg.jpeg');
   background-size: cover;
-  .verify-header {
+  .header {
     text-align: center;
     box-sizing: border-box;
     padding: 39px;
     font-size: 35px;
     font-weight: bold;
     white-space: nowrap;
-  }
-  .verify-image {
-    text-align: center;
-  }
-  .verify-text {
-    text-align: center;
-    line-height: 27px;
-    font-size: 20px;
-    margin-bottom: 55px;
   }
 }

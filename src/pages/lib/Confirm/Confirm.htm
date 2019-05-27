@@ -1,0 +1,17 @@
+<div class="root confirm">
+  <div class="outer">
+    <div v-if="loading">
+      <div class="text-center">
+        <b-spinner style="width: 5rem; height: 5rem;" label="Loading..."></b-spinner>
+      </div>
+    </div>
+    <div v-else>
+      <div class="verify-header">
+        {{ msg }}
+      </div>
+      <div class="verify-image">
+        <img src="/static/check.svg" alt="Check">
+      </div>
+    </div>
+  </div>
+</div>
